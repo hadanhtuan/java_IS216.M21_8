@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="06be0412-029a-4a5b-a994-b6905e6b4014">
+	<property name="ireport.zoom" value="0.9090909090909093"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#CCCCCC" fontName="Times New Roman" fontSize="18" isBold="false" pdfFontName="Times-Roman"/>
+	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true" pdfFontName="Times-Roman"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#F0EFEF"/>
+		</conditionalStyle>
+	</style>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#00FFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TH" mode="Opaque" backcolor="#7FFFD4">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_CH" mode="Opaque" backcolor="#BFFFEA">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_TH" mode="Opaque" backcolor="#7FFFD4">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_CH" mode="Opaque" backcolor="#BFFFEA">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="DataSet" uuid="38b57213-6349-46cf-8a43-901ed4303080">
+		<parameter name="ThangHD" class="java.lang.String">
+			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+		</parameter>
+		<parameter name="NamHD" class="java.lang.String">
+			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+		</parameter>
+		<queryString>
+			<![CDATA[Select SoHoaDon, SoHopDong, MaNV, NgayHoaDon, TriGia, extract(month from NgayHoaDon) as ThangHD, extract(year from NgayHoaDon) as NamHD 
+from HoaDon
+where extract(month from NgayHoaDon) = $P{ThangHD}
+and extract(year from NgayHoaDon) = $P{NamHD}]]>
+		</queryString>
+		<field name="SOHOADON" class="java.lang.String"/>
+		<field name="SOHOPDONG" class="java.lang.String"/>
+		<field name="MANV" class="java.lang.String"/>
+		<field name="NGAYHOADON" class="java.sql.Timestamp"/>
+		<field name="TRIGIA" class="java.lang.Double"/>
+		<field name="THANGHD" class="java.math.BigDecimal"/>
+		<field name="NAMHD" class="java.math.BigDecimal"/>
+	</subDataset>
+	<parameter name="ThangHD" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="NamHD" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[Select SoHoaDon, SoHopDong, MaNV, NgayHoaDon, TriGia, extract(month from NgayHoaDon) as ThangHD, extract(year from NgayHoaDon) as NamHD 
+from HoaDon
+where extract(month from NgayHoaDon) = $P{ThangHD}
+and extract(year from NgayHoaDon) = $P{NamHD}]]>
+	</queryString>
+	<field name="SOHOADON" class="java.lang.String"/>
+	<field name="SOHOPDONG" class="java.lang.String"/>
+	<field name="MANV" class="java.lang.String"/>
+	<field name="NGAYHOADON" class="java.sql.Timestamp"/>
+	<field name="TRIGIA" class="java.lang.Double"/>
+	<field name="THANGHD" class="java.math.BigDecimal"/>
+	<field name="NAMHD" class="java.math.BigDecimal"/>
+	<variable name="THANHTIEN_1" class="java.math.BigDecimal" resetType="Column" calculation="Sum">
+		<variableExpression><![CDATA[]]></variableExpression>
+	</variable>
+	<variable name="THANHTIEN_2" class="java.math.BigDecimal" resetType="Page" calculation="Sum">
+		<variableExpression><![CDATA[]]></variableExpression>
+	</variable>
+	<variable name="TRIGIA_1" class="java.lang.Double" resetType="Page" calculation="Sum">
+		<variableExpression><![CDATA[$F{TRIGIA}]]></variableExpression>
+	</variable>
+	<variable name="TRIGIA_2" class="java.lang.Double" resetType="Page" calculation="Sum">
+		<variableExpression><![CDATA[$F{TRIGIA}]]></variableExpression>
+	</variable>
+	<variable name="TRIGIA_3" class="java.lang.Double" resetType="Column" calculation="Sum">
+		<variableExpression><![CDATA[$F{TRIGIA}]]></variableExpression>
+	</variable>
+	<variable name="TRIGIA_4" class="java.lang.Double" resetType="Column" calculation="Sum">
+		<variableExpression><![CDATA[$F{TRIGIA}]]></variableExpression>
+	</variable>
+	<variable name="TRIGIA_5" class="java.lang.Double" resetType="Column" calculation="Sum">
+		<variableExpression><![CDATA[$F{TRIGIA}]]></variableExpression>
+	</variable>
+	<variable name="TRIGIA_6" class="java.lang.Double" resetType="Column" calculation="Sum">
+		<variableExpression><![CDATA[$F{TRIGIA}]]></variableExpression>
+	</variable>
+	<title>
+		<band height="144" splitType="Stretch">
+			<textField>
+				<reportElement x="69" y="39" width="418" height="96" uuid="30a664b0-a0de-40c8-8eb4-02b4a8f8d251"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="24" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["BÁO CÁO DOANH THU THÁNG "+$F{THANGHD}+" NĂM "+$F{NAMHD}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="157" height="35" uuid="218f056d-cb80-40b7-976d-8430eeb1ca6d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[CÔNG TY CHO THUÊ XE SBTH
+CHI NHÁNH THỦ ĐỨC]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="191" splitType="Stretch">
+			<componentElement>
+				<reportElement key="table 8" style="table 8" x="47" y="38" width="467" height="145" uuid="2e9eb2f5-d4d2-41b8-a10c-02e710a3be26"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="DataSet" uuid="815acb76-eb27-4499-a8dc-7157d6597647">
+						<datasetParameter name="ThangHD">
+							<datasetParameterExpression><![CDATA[$P{ThangHD}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="NamHD">
+							<datasetParameterExpression><![CDATA[$P{NamHD}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="90" uuid="b3225670-7e9b-4680-815a-574b018ced76">
+						<jr:columnHeader style="table 8_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="b2b0785a-25a2-46c8-be60-e7792c0ea128"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[MANV]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 8_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="69eb1d7e-a7a7-460d-92b8-23b8c15484bf"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{MANV}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="53a6e3ca-b3d7-4a7f-b4ca-35449332c84c">
+						<jr:columnHeader style="table 8_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="8af0e24d-ab35-46bd-9a68-5b66ec4883f8"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[SOHOADON]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 8_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="844aab91-4d2c-40fc-9577-7a7b8327966c"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{SOHOADON}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="cd6a7742-68bd-4486-8c2a-1b5b0a4ef889">
+						<jr:columnHeader style="table 8_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="535d882a-c55b-47e7-9853-05951b922494"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[SOHOPDONG]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 8_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="3bf3f339-da44-4e0f-a85c-082b56075bff"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{SOHOPDONG}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="103" uuid="5b1f8a69-992f-45a0-9f8d-b3a41ffd9ea8">
+						<jr:columnHeader style="table 8_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="103" height="30" uuid="dfde0b87-9f1b-4e1b-b6f7-1c723719373a"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[NGAYHOADON]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 8_TD" height="20" rowSpan="1">
+							<textField pattern="dd/MM/yyyy">
+								<reportElement x="0" y="0" width="103" height="20" uuid="1f0f436e-da15-4465-a3c0-3b634fdb5c6c"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{NGAYHOADON}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="64ff8433-2d9a-46b5-85ab-621c0a893e9b">
+						<jr:columnHeader style="table 8_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="8f446071-496e-4ac3-b702-da7239f2f75a"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[TRIGIA]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 8_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="f63a204c-3ae8-4bd6-83fe-04f0fe617dfb"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{TRIGIA}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="452" y="18" width="103" height="20" uuid="f19985c8-1769-4885-8c47-a8a62cb50699"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="343" y="18" width="109" height="20" uuid="f325c3c7-4b12-4b5e-b5d4-6537f3bd6027"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Ngày xem: ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<columnFooter>
+		<band height="241">
+			<textField evaluationTime="Column" pattern="#,##0 VNĐ">
+				<reportElement x="422" y="0" width="120" height="39" uuid="5a83b921-f35e-40b8-9ddb-fb4bcad8db1c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{TRIGIA_6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="256" y="0" width="166" height="39" uuid="f09df96b-6650-417d-b04f-727bfe926fa2"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TỔNG DOANH THU: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="168" y="210" width="201" height="20" uuid="caa4445a-61d7-49d0-8870-fea43ae7b1d1"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[THỦ ĐỨC, THÀNH PHỐ HỒ CHÍ MINH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="69" width="144" height="27" uuid="f735ad72-24bc-49d5-a572-12b436cb9aaf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Người Lập]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="146" width="144" height="27" uuid="7e304716-2c78-4303-a30e-6d1f5dfac605"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Trần Quốc Bảo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="343" y="69" width="144" height="27" uuid="914ce8de-2349-4053-ac5e-5cd068fcfe86"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Quản Lý]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="343" y="146" width="144" height="27" uuid="6a07cd14-7d35-4bbc-becb-a8f1e135c32d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Phạm Quang Hòa]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+</jasperReport>
