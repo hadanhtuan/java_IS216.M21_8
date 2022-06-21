@@ -2,17 +2,16 @@
 
 <h6 align=center>Phần mềm quản lý cho thuê xe ô tô</h6>
 
-<p>Mục lục</p>
+<h3 style="font-size:30px">Mục lục</h3>
 <p><a href="#muctieu">Mục tiêu đồ án </a></p>
 <p><a href="#danhsach">Danh sách thành viên</a></p>
 <p><a href="#chucnang">Các chức năng </a></p>
 <p><a href="#caidat">Cài đặt và sử dụng </a></p>
-<p><a href="">Liên hệ </a></p>
-<p><a href="">Bản quyền </a></p>
-<p><a href="">Tài liệu tham khảo </a></p>
+<p><a href="#lienhe">Liên hệ </a></p>
+<p><a href="#thamkhao">Tài liệu tham khảo </a></p>
 
 <hr id="muctieu">
-<p>Mục tiêu đồ án</p>
+<h3>Mục tiêu đồ án</h3>
 <hr>
 <p>Xây dựng một hệ thống quản lý cho thuê xe giúp cho công việc quản lý xe của chủ cửa hàng và công việc thuê xe của khách hàng trở nên thuận tiện. Cung cấp chi tiết thông tin về các loại xe, tình trạng xe, giá tiền, các dịch vụ liên quan… Ứng dụng giúp khách hàng thuận tiện khi thuê xe online.</p>
 
@@ -27,7 +26,7 @@
 
 
 <hr id="danhsach">
-<p>Các thành viên tham gia project</p>
+<h3>Các thành viên tham gia project</h3>
 <hr>
 <table border="1">  
 <tr><th>STT</th><th>Họ tên</th><th>MSSV</th><th>SĐT</th><th>Nhiệm vụ</th><th>Đánh giá</th></tr>  
@@ -38,7 +37,7 @@
 </table>  
 
 <hr id="chucnang">
-<p>Tóm tắt chức năng</p>
+<h3>Tóm tắt chức năng</h3>
 <hr>
 <p>Khách hàng</p>
 
@@ -80,10 +79,34 @@
 
 
 <hr id="caidat">
-<p>Cài đặt và sử dụng</p>
-<p>1. Tạo user mới và chạy file script.sql</p>
-<p>2. Add các plugin cần thiết của report</p>
-<p>3. Tải file app.zip về và import vào netbean</p>
-<p>3. </p>
-
+<h3>Cài đặt và sử dụng</h3>
 <hr>
+<p>1. Add các plugin cần thiết của report</p>
+<p>2. Tạo user mới và chạy file script.sql trên Oracle SQL Developer</p>
+<p>---2.1. Lưu ý chạy lần lượt từng trigger và proceduce
+<p>3. Tải file app.zip về và import vào netbean</p>
+<p>4. Thay username và password ở trong connectDB/DBO.java bằng username và password tạo ở bước 2</p>
+
+
+<hr id="lienhe">
+<h3>Liên hệ</h3>
+<hr>
+<p>Project Link: <a href="https://github.com/hadanhtuan/java_IS216.M21_8">Link</a></p>
+<p>Hà Danh Tuấn: <a href="https://www.facebook.com/danhtu.ha.56">Facebook</a></p>
+<p>Phạm Quang Hòa: <a href="https://www.facebook.com/hoapham.Z">Facebook</a></p>
+<p>Trần Quốc Bảo: <a href="https://www.facebook.com/TheBlueStarZ">Facebook</a></p>
+<p>Đỗ Văn Sáng: <a href="https://www.facebook.com/tristando01">Facebook</a></p>
+
+
+<hr id="thamkhao">
+<h3>Tài liệu tham khảo</h3>
+<hr>
+
+
+<ul>
+<li>https://stackoverflow.com/</li>
+<li>https://www.w3schools.com/</li>
+<li>https://docs.oracle.com</li>
+<li>https://freetuts.net</li>
+<li>https://viblo.asia</li>
+</ul>
