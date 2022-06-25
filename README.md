@@ -75,6 +75,7 @@
 <ul>
 <li>Dùng mail.jar để gửi mail</li>
 <li>Đặt hàng và xuất hoá đơn đặt</li>
+<li>Dùng javax.crypto để mã hóa mật khẩu</li>
 </ul>
 
 
